@@ -1,0 +1,27 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+#projects img {
+    float: left;
+    padding: 9px 15px 0 0;
+}
+
+.headsup {
+    margin-top: 10px;
+    min-height: 120px;
+}
+
+.headsup .picture {
+    padding: 7px 20px 0 0;
+    float: left;
+}
+
+.headsup img {
+    height: 111px;
+    width: 111px;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+}
