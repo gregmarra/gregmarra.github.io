@@ -1,0 +1,40 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+a {
+    color: #f60;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 800px;
+}
+
+#header #titles {
+    background: url('../images/icon.png') center left no-repeat;
+    padding: 0 0 0 60px;
+}
+
+#header h1 {
+    font-size: 3em;
+    padding-top: 12px;
+    margin-bottom: 0px;
+}
+
+#header h2 {
+    color: #999;
+    margin-top: 0px;
+}
+
+#content p {
+    padding-left: 2em;
+}
+
+#nav li {
+    display: inline;
+    list-style: none;
+}
+
+
+
