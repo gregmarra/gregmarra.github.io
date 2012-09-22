@@ -1,3 +1,4 @@
-= grgmrr.com =
+grgmrr.com
+==========
 
 The personal website of @gregmarra
