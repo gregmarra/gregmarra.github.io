@@ -3,11 +3,6 @@ body {
     padding-bottom: 40px;
 }
 
-#projects img {
-    float: left;
-    padding: 9px 15px 0 0;
-}
-
 .headsup {
     margin-top: 10px;
     min-height: 120px;
@@ -24,4 +19,8 @@ body {
     -webkit-border-radius: 6px;
        -moz-border-radius: 6px;
             border-radius: 6px;
+}
+
+.thumbnail p:last-of-type {
+    margin: 0;
 }
