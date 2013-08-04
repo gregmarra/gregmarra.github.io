@@ -18,3 +18,7 @@ body {
 .thumbnail p:last-of-type {
     margin: 0;
 }
+
+#projects .thumbnail {
+    margin-top: 1em;
+}
