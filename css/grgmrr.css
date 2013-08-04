@@ -2,12 +2,8 @@ body {
     padding-bottom: 40px;
 }
 
-.headsup {
-    min-height: 120px;
-}
-
 .headsup .picture {
-    padding: 7px 20px 0 0;
+    padding: 0 1em 0 0;
     float: left;
 }
 
