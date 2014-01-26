@@ -18,3 +18,24 @@
 #projects .thumbnail {
     margin-top: 1em;
 }
+
+.navbar-text i {
+    color: #777;
+    padding-right: 0.3em;
+}
+
+.navbar-text a:hover i {
+    color: black;
+}
+
+.navbar-text a:hover i.fa-facebook-square {
+    color: #4c66a4;
+}
+
+.navbar-text a:hover i.fa-twitter {
+    color: #4099FF;
+}
+
+.navbar-text a:hover i.fa-google-plus-square {
+    color: #D34836;
+}
