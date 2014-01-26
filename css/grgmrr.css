@@ -11,12 +11,8 @@
             border-radius: 6px;
 }
 
-.thumbnail p:last-of-type {
-    margin: 0;
-}
-
-#projects .thumbnail {
-    margin-top: 1em;
+.project-row {
+    margin-bottom: 2em;
 }
 
 .navbar-text i {
