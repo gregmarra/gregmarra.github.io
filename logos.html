@@ -35,8 +35,23 @@
       #main.olin {
         background: white;
       }
-      .olin #logo {
-        background-image: url("/img/logo-olin.png");
+      .olin-blue #logo {
+        background-image: url("/img/logo-olin-blue.png");
+      }
+      .olin-yellow #logo {
+        background-image: url("/img/logo-olin-yellow.png");
+      }
+      .olin-teal #logo {
+        background-image: url("/img/logo-olin-teal.png");
+      }
+      .olin-green #logo {
+        background-image: url("/img/logo-olin-green.png");
+      }
+      .olin-purple #logo {
+        background-image: url("/img/logo-olin-purple.png");
+      }
+      .olin-red #logo {
+        background-image: url("/img/logo-olin-red.png");
       }
       
     </style>
@@ -44,14 +59,22 @@
 
   <body>
 
-    <div id="main" class="olin">
+    <div id="main" class="olin-blue">
       <div id="logo" />
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
       $("#logo").click(function() {
-        $("#main").toggleClass("olin fb");
+        if ($("#main").hasClass("fb")) {
+          $("#main").removeClass("fb");
+          var olin_colors = ["olin-blue", "olin-yellow", "olin-teal", "olin-green", "olin-purple", "olin-red"];
+          var olin_color = olin_colors[Math.floor(Math.random()*olin_colors.length)];
+          $("#main").addClass(olin_color);
+        } else {
+          $("#main").removeClass();
+          $("#main").addClass("fb");
+        }
       });
     </script>
   </body>
