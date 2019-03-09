@@ -1,21 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Greg Marra</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Greg Marra's world wide web site. Site best viewed in Netscape 3.0 and above. Webring. 12,177 hits.">
-    <meta name="author" content="Greg Marra">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Le styles -->
     <link href="/css/grgmrr.css" rel="stylesheet">
-    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <title>Greg Marra</title>
+    <meta name="description" content="Greg Marra's world wide web site. Site best viewed in Netscape 3.0 and above. Webring. 12,177 hits.">
+    <meta name="author" content="Greg Marra">
 
     <!-- Le fav icons -->
     <link rel="shortcut icon" href="/favicon.ico">
@@ -32,7 +29,6 @@
     <meta property="fb:admins" content="1086840001">
     <meta property="og:locale" content="en_US"> 
 
-    
     <!-- GA -->
     <script type="text/javascript">
 
@@ -50,52 +46,58 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Greg Marra</a>
-          <ul class="nav navbar-nav hidden-xs">
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#learnmore">Contact</a></li>
-            <li><p class="navbar-text">
-              <a href="http://www.facebook.com/gregmarra" rel="me"><i class="fa fa-lg fa-facebook-square"></i></a>
-              <a href="http://www.twitter.com/gregmarra" rel="me"><i class="fa fa-lg fa-twitter"></i></a>
-              <a href="https://plus.google.com/+GregMarra" rel="author"><i class="fa fa-lg fa-google-plus-square"></i></a>
-              <a href="https://github.com/gregmarra/" rel="me"><i class="fa fa-lg fa-github"></i></a>
-            <p></li>
+        <a class="navbar-brand" href="#">Greg Marra</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
+          <span class="navbar-text">
+            <a href="https://www.facebook.com/gregmarra" rel="me"><i class="fa fa-lg fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com/gregmarra" rel="me"><i class="fa fa-lg fa-twitter"></i></a>
+            <a href="https://github.com/gregmarra/" rel="me"><i class="fa fa-lg fa-github"></i></a>
+          </span>
         </div>
       </div>
     </nav>
 
     <div class="container" id="main">
 
-      <div class="row headsup">
-        <div class="col-md-12">
-          <div class="picture"><img src="img/pink_profile_photo.jpg" alt="Greg Marra" /></div>
-          <p><strong>Hi! I'm Greg.</strong></p>
+      <div class="media profile-photo mt-3">
+        <img class="align-self-start rounded mr-3" src="img/pink_profile_photo.jpg" alt="Greg Marra">
+        <div class="media-body">
+          <h5 class="mt-0">Hi! I'm Greg.</h5>
           <p>I'm fascinated by how people use the internet to connect with each other</p>
           <p>I love creating things that take on a life of their own</p>
           <p><a class="btn btn-primary" href="mailto:greg.marra@gmail.com">Email me</a></p>
         </div>
       </div>
-      
+
       <hr>
 
       <div id="facts">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg">
             <h3>I make robots</h3>
             <p>I'm an engineer because some awesome mentors taught me how to build robots in high school</p>
             <p>Now I help <a href="http://www.thebluealliance.com">run a website</a> to support the <a href="http://www.usfirst.org">FIRST Robotics</a> community</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg">
             <h3>I went to Olin College</h3>
             <p><a href="http://www.olin.edu">Olin</a> is a 300 student engineering college outside Boston</p>
             <p>I learned how engineering, design, and entrepreneurship enable you to imagine what has never been and do whatever it takes to make it happen</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg">
             <h3>I work at Facebook</h3>
             <p>I've always been interested in how people connect through technology, so now I work on making that easier for more people than ever before</p>
           </div>
@@ -104,164 +106,104 @@
 
       <hr>
 
-      <div class="row" id="projects">
-        <div class="container">
-          <div class="col-12">
-            <h2>Projects</h2>
+      <h2 id="projects">Projects</h2>
+
+      <div class="card-deck mt-2">
+        <div class="card">
+          <a href="https://www.facebook.com"><img class="card-img-top" src="img/project_news_feed_360x240.png" alt="Facebook News Feed"></a>
+          <div class="card-body">
+            <h5 class="card-title">Facebook News Feed</h5>
+            <p class="card-text">Since 2012, working to make Facebook News Feed more interesting, better at helping people connect with friends and family, and become more informed about the world around them. Most of my work has been on the News Feed ranking algorithm.</p>
+            <a href="https://www.facebook.com" class="btn btn-light">See what&rsquo;s new &raquo;</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://www.thebluealliance.com"><img class="card-img-top" src="img/project_tba_360x240.jpg" alt="The Blue Alliance"></a>
+          <div class="card-body">
+            <h5 class="card-title">The Blue Alliance</h5>
+            <p class="card-text">Started and help manage volunteer developer community that runs video site to support the <a href="http://www.usfirst.org/">FIRST Robotics Competition</a> high-school STEM program. <a href="http://www.thebluealliance.com">The Blue Alliance</a> is a key part of the online FIRST community, with over 5,000,000 visits annually.</p>
+            <a href="http://www.thebluealliance.com" class="btn btn-light">Visit site &raquo;</a> <a href="http://www.github.com/gregmarra/the-blue-alliance" class="btn btn-light">On GitHub &raquo;</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href="http://vimeo.com/12405733"><img class="card-img-top" src="img/project_gator_360x240.jpg" alt="Gator Self Driving Vehicle"></a>
+          <div class="card-body">
+            <h5 class="card-title">Off-Road Self Driving Car <small class="text-muted">2010</small></h5>
+            <p class="card-text">Designed and built off-road robotics research platform for my <a href="http://scope.olin.edu" title="Olin SCOPE Projects">Olin capstone project</a>. The robot followed GPS waypoints with half meter accuracy while avoiding obstacles using LIDAR.</p>
+            <a href="http://vimeo.com/12405733" class="btn btn-light">Watch video &raquo;</a>
           </div>
         </div>
       </div>
 
-      <div class="row project-row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="https://www.facebook.com"><img src="img/project_news_feed_360x240.png" class="img-responsive" alt="Facebook News Feed" /></a>
-            <div class="caption">
-              <h3>Facebook News Feed</h3>
-              <p>Since 2012, working to make Facebook News Feed more interesting and better at helping people connect with friends and family and become more informed about the world around them. Most of my work has been on the News Feed ranking algorithm.</p>
-              <p><a href="https://www.facebook.com" class="btn btn-default">See what&rsquo;s new &raquo;</a></p>
-            </div>
+      <div class="card-deck mt-2">
+        <div class="card">
+          <a href="http://ca.olin.edu/2008/realboy/"><img class="card-img-top" src="img/project_socialbots_360x240.jpg" alt="Socialbots" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Socialbots <small class="text-muted">2008</small></h5>
+            <p class="card-text">At Olin College, built an <a href="http://ca.olin.edu/2008/realboy/">autonomous network of social robots</a>. Unsupervised, the bots convinced human users to follow them and reply emotionally to tweets.</p>
+            <p class="card-text">Presented at <a href="http://gregmarra.tumblr.com/post/3881535261/gepettos-army" title="Socialbots at SXSW 2011">SXSW 2011</a>, <a href="http://civic.mit.edu/blog/amyj/and-now-for-something-completely-different-liveblog" title="Socialbots at MIT-Knight Civic Media 2012">MIT-Knight Civic Media 2012</a>, and <a href="http://schedule.sxsw.com/2013/events/event_IAP3526" title="Socialbots at SXSW 2013">SXSW 2013</a>.</p>
+            <a href="http://ca.olin.edu/2008/realboy/" class="btn btn-light">Learn more &raquo;</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://www.thebluealliance.com"><img src="img/project_tba_360x240.jpg" class="img-responsive" alt="The Blue Alliance" /></a>
-            <div class="caption">
-              <h3>The Blue Alliance</h3>
-              <p>Started and help manage volunteer developer community that runs video site to support the <a href="http://www.usfirst.org/">FIRST Robotics Competition</a> high-school STEM program. <a href="http://www.thebluealliance.com">The Blue Alliance</a> is a key part of the online FIRST community, with over 2,000,000 visits annually.</p>
-              <p><a href="http://www.thebluealliance.com" class="btn btn-default">Visit site &raquo;</a> <a href="http://www.github.com/gregmarra/the-blue-alliance" class="btn btn-default">On GitHub &raquo;</a></p>
-            </div>
+        <div class="card">
+          <a href="http://vimeo.com/2032734"><img class="card-img-top" src="img/project_mechproto_360x240.jpg" alt="Biomimetic Fish Robots" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Biomimetic Fish Robot <small class="text-muted">2008</small></h5>
+            <p class="card-text">Worked with a team to design prototype several biomimetic swimming robots. One was <a href="http://vimeo.com/2032734">this stingray</a>, powered by a singed motor. The full design, fabrication, and assembly timeline was two weeks.</p>
+            <a href="http://vimeo.com/2032734" class="btn btn-light">Watch video &raquo;</a> <a href="http://www.flickr.com/photos/gregmarra/sets/72157613110543340/" class="btn btn-light">See photos &raquo;</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://vimeo.com/12405733"><img src="img/project_gator_360x240.jpg" class="img-responsive" alt="Gator" /></a>
-            <div class="caption">
-              <h3>Off-Road Robot Car <small>2010</small></h3>
-              <p>Designed and built off-road robotics research platform for my <a href="http://scope.olin.edu" title="Olin SCOPE Projects">Olin capstone project</a>. The robot followed GPS waypoints with half meter accuracy while avoiding obstacles using LIDAR.</p>
-              <p><a href="http://vimeo.com/12405733" class="btn btn-default">Watch video &raquo;</a></p>
-            </div>
+        <div class="card">
+          <a href="http://twanslator.appspot.com"><img class="card-img-top" src="img/project_twanslator_360x240.jpg" alt="Twanslator" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Twanslator <small class="text-muted">2009</small>></h5>
+            <p class="card-text">Ever wish you spoke another language so you could have more followers in Europe? Now you can! <a href="http://twanslator.appspot.com">Twanslator</a> watched your tweets and automatically reposted them in a foreign language.</p>
           </div>
         </div>
       </div>
 
-      <div class="row project-row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://ca.olin.edu/2008/realboy/"><img src="img/project_socialbots_360x240.jpg" class="img-responsive" alt="Socialbots" /></a>
-            <div class="caption">
-              <h3>Socialbots <small>2008</small></h3>
-              <p>At Olin College, built an <a href="http://ca.olin.edu/2008/realboy/">autonomous network of social robots</a>. Unsupervised, the bots convinced human users to follow them and reply emotionally to tweets.</p>
-              <p>Presented at <a href="http://gregmarra.tumblr.com/post/3881535261/gepettos-army" title="Socialbots at SXSW 2011">SXSW 2011</a>, <a href="http://civic.mit.edu/blog/amyj/and-now-for-something-completely-different-liveblog" title="Socialbots at MIT-Knight Civic Media 2012">MIT-Knight Civic Media 2012</a>, and <a href="http://schedule.sxsw.com/2013/events/event_IAP3526" title="Socialbots at SXSW 2013">SXSW 2013</a></p>
-              <p><a href="http://ca.olin.edu/2008/realboy/" class="btn btn-default">Learn more &raquo;</a></p>
-            </div>
+      <div class="card-deck mt-2">
+        <div class="card">
+          <img class="card-img-top" src="img/project_yawnlog_360x240.jpg" alt="Yawnlog" />
+          <div class="card-body">
+            <h5 class="card-title">Yawnlog <small class="text-muted">2009</small></h5>
+            <p class="card-text">Yawnlog was a website to help you track your sleep and compete for most/least with friends.</p>
+            <p class="card-text">Featured on <a href="http://readwrite.com/2009/02/26/yawnlog_a_social_sleep_tracker">ReadWrite</a>, <a href="http://lifehacker.com/5450966/yawnlog-tracks-your-sleep-habits-helps-you-pinpoint-problems">Lifehacker</a>, and <a href="http://thenextweb.com/2009/02/25/track-sleep-yawnlog-kidding/">The Next Web</a></p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://vimeo.com/2032734"><img src="img/project_mechproto_360x240.jpg" class="img-responsive" alt="Biomimetic Fish Robots" /></a>
-            <div class="caption">
-              <h3>Biomimetic Fish Robot <small>2008</small></h3>
-              <p>Worked with a team to design prototype several biomimetic swimming robots. One was <a href="http://vimeo.com/2032734">this stingray</a>, powered by a singed motor. The full design, fabrication, and assembly timeline was two weeks.</p>
-              <p><a href="http://vimeo.com/2032734" class="btn btn-default">Watch video &raquo;</a> <a href="http://www.flickr.com/photos/gregmarra/sets/72157613110543340/" class="btn btn-default">See photos &raquo;</a></p>
-            </div>
+        <div class="card">
+          <a href="http://www.grgmrr.com/mural"><img class="card-img-top" src="img/project_mural_360x240.jpg" alt="Mural for Android" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Mural for Android <small class="text-muted">2009</small></h5>
+            <p class="card-text"><a href="http://www.grgmrr.com/mural" title="Mural for Android">Mural</a> turned your Android phone's wallpaper into a social experience. Automatically post your phone's wallpaper to Facebook for your friends to see, and get suggestions from your friends for newer (better!) wallpapers than the one you have.</p>
+            <a href="http://www.grgmrr.com/mural" class="btn btn-light">Learn more &raquo;</a>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://twanslator.appspot.com"><img src="img/project_twanslator_360x240.jpg" class="img-responsive" alt="Twanslator" /></a>
-            <div class="caption">
-              <h3>Twanslator <small>2009</small></h3>
-              <p>Ever wish you spoke another language so you could have more followers in Europe? Now you can! <a href="http://twanslator.appspot.com">Twanslator</a> watches your tweets and automatically reposts them in a foreign language.</p>
-              <p><a href="http://twanslator.appspot.com" class="btn btn-default">Twanslate &raquo;</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row project-row">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <img src="img/project_yawnlog_360x240.jpg" class="img-responsive" alt="Yawnlog" />
-            <div class="caption">
-              <h3>Yawnlog <small>2009</small></h3>
-              <p>Yawnlog was a website to help you track your sleep and compete for most/least with friends.</p>
-              <p>Featured on <a href="http://readwrite.com/2009/02/26/yawnlog_a_social_sleep_tracker">ReadWrite</a>, <a href="http://lifehacker.com/5450966/yawnlog-tracks-your-sleep-habits-helps-you-pinpoint-problems">Lifehacker</a>, and <a href="http://thenextweb.com/2009/02/25/track-sleep-yawnlog-kidding/">The Next Web</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://www.grgmrr.com/mural"><img src="img/project_mural_360x240.jpg" class="img-responsive" alt="Mural for Android" /></a>
-            <div class="caption">
-              <h3>Mural for Android <small>2009</small></h3>
-              <p><a href="http://www.grgmrr.com/mural" title="Mural for Android">Mural</a> turned your Android phone's wallpaper into a social experience. Automatically post your phone's wallpaper to Facebook for your friends to see, and get suggestions from your friends for newer (better!) wallpapers than the one you have.</p>
-              <p><a href="http://www.grgmrr.com/mural" class="btn btn-default">Learn more &raquo;</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <a href="http://inpangaea.appspot.com"><img src="img/project_pangaea_360x240.jpg" class="img-responsive" alt="Weasley Clock" /></a>
-            <div class="caption">
-              <h3>Weasley Clock <small>2010</small></h3>
-              <p>In Harry Potter, Weasley family has a clock that points to where everyone in the family is. An Android phone, an Arduino, and a hobby servo get you <a href="http://inpangaea.appspot.com">pretty close</a>.</p>
-              <p><a href="http://inpangaea.appspot.com" class="btn btn-default">Watch video &raquo;</a></p>
-            </div>
+        <div class="card">
+          <a href="https://vimeo.com/11280262"><img class="card-img-top" src="img/project_pangaea_360x240.jpg" alt="Weasley Clock" /></a>
+          <div class="card-body">
+            <h5 class="card-title">Weasley clock <small class="text-muted">2010</small></h5>
+            <p class="card-text">In Harry Potter, Weasley family has a clock that points to where everyone in the family is. An Android phone, an Arduino, and a hobby servo get you pretty close</a>.</p>
+            <a href="https://vimeo.com/11280262" class="btn btn-light">Watch video &raquo;</a>
           </div>
         </div>
       </div>
 
       <hr>
 
-      <div id="learnmore">
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Get in touch</h3>
-            <p>You can send me electronic mail! I will try to write back :)</p>
-            <p><a class="btn btn-default" href="mailto:greg.marra@gmail.com">greg.marra@gmail.com</a></p>
-          </div>
-          <div class="col-md-4">
-            <h3>Social Media!!</h3>
-            <p><div class="fb-like" data-href="http://grgmrr.com" data-send="false" data-width="300" data-show-faces="false"></div></p>
-            <p><div class="fb-subscribe" data-href="https://www.facebook.com/gregmarra" data-show-faces="false" data-width="300"></div></p>
-            <p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://grgmrr.com" data-text="Really love @gregmarra 's world wide web site!" data-hashtags="gregmarra">Tweet</a></p>
-            <p><a href="https://twitter.com/gregmarra" class="twitter-follow-button" data-show-count="false">Follow @gregmarra</a></p>
-          </div>
-          <div class="col-md-4">
-            <h3>Moar Social Media!1!!</h3>
-            <p><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fgrgmrr.com&amp;media=http%3A%2F%2Fgrgmrr.com%2Fimg%2Fgreg.jpg&amp;description=Greg%20Marra's%20world%20wide%20web%20site.%20Site%20best%20viewed%20in%20Netscape%203.0%20and%20above.%20Webring.%2012177%20hits." class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></p>
-            <p>
-              <iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://www.connect.renren.com/like/v2?url=http%3A%2F%2Fgrgmrr.com&amp;title=Greg%20Marra&amp;description=Greg%20Marra%26rsquo%3Bs%20world%20wide%20web%20site.%20Site%20best%20viewed%20in%20Netscape%203.0%20and%20above.%20Webring.%2012177%20hits.&amp;image=http%3A%2F%2Fgrgmrr.com%2Fimg%2Fgreg.jpg" style="width:210px;height:65px;"></iframe>
-            </p>
-            <p>
-              <script type="text/javascript" charset="utf-8">
-              (function(){
-                var _w = 86 , _h = 50;
-                var param = {
-                  url:'http://grgmrr.com',
-                  type:'6',
-                  count:'1', /**是否显示分享数，1显示(可选)*/
-                  appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
-                  title:'Greg Marra', /**分享的文字内容(可选，默认为所在页面的title)*/
-                  pic:'http://grgmrr.com/img/greg.jpg', /**分享图片的路径(可选)*/
-                  ralateUid:'', /**关联用户的UID，分享微博会@该用户(可选)*/
-                  language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
-                  rnd:new Date().valueOf()
-                }
-                var temp = [];
-                for( var p in param ){
-                  temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
-                }
-                document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
-              })()
-              </script>
-            </p>
-            <p>
-              <a href="http://mixi.jp/share.pl" class="mixi-check-button">check</a>
-              <script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script>
-            </p>
-          </div>
+      <div class="row" id="contact">
+        <div class="col">
+          <h3>Get in touch</h2>
+          <p>You can send me electronic mail! I will try to write back 🙂</p>
+          <p><a class="btn btn-light" href="mailto:greg.marra@gmail.com">📧 greg.marra@gmail.com</a></p>
+        </div>
+        <div class="col">
+          <h3>Social Media!!</h3>
+          <p><div class="fb-like" data-href="http://grgmrr.com" data-send="false" data-width="300" data-show-faces="false"></div></p>
+          <p><div class="fb-subscribe" data-href="https://www.facebook.com/gregmarra" data-show-faces="false" data-width="300"></div></p>
+          <p><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://grgmrr.com" data-text="Really love @gregmarra 's world wide web site!" data-hashtags="gregmarra">Tweet</a></p>
+          <p><a href="https://twitter.com/gregmarra" class="twitter-follow-button" data-show-count="false">Follow @gregmarra</a></p>
+        </div>
         </div>
       </div>
 
@@ -278,11 +220,12 @@
       </footer>
     </div> <!-- /main -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <div id="fb-root"></div>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
     <!-- FB -->
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];

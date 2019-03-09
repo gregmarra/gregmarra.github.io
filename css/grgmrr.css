@@ -1,19 +1,6 @@
-.headsup .picture {
-    padding: 0 1em 0 0;
-    float: left;
-}
-
-.headsup img {
-    height: 124px;
-    width: 124px;
-    -webkit-border-radius: 6px;
-       -moz-border-radius: 6px;
-            border-radius: 6px;
-}
-
 .navbar-text i {
     color: #777;
-    padding-right: 0.3em;
+    padding-left: 0.3em;
 }
 
 .navbar-text a:hover i {
@@ -30,4 +17,9 @@
 
 .navbar-text a:hover i.fa-google-plus-square {
     color: #D34836;
+}
+
+.profile-photo img {
+    height: 124px;
+    width: 124px;
 }
