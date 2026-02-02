@@ -11,8 +11,8 @@
     color: #4c66a4;
 }
 
-.navbar-text a:hover i.fa-twitter {
-    color: #4099FF;
+.navbar-text a:hover i.fa-threads {
+    color: #000000;
 }
 
 .profile-photo img {
